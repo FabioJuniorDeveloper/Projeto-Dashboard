@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIAVEIS */
+:root {
+    --Background: #131129;
+    --color-text:#FFF;
+    --side-card-color: #1D1933;
+    --Color-text-perfil: #E3DDFC;
+    --Color-text-ETH: #6F4EF2;
+    --Color-text-Time: #7184AD;
+    --Color-text-Trending-sucess:#51BB25;
+    --Color-text-Trending-danger:#DC3545;
+    --Color-text-Trending:#7E7E7E;
+    --btn-color-1: #6f4ef2;
+    --btn-color-2: #f73164;
+    --btn-border-color-2: #f73164;
+}
+/* CONFIGURAÇÃO PADRÃO */
+body {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    min-height: 100vh;
+    color: var(--color-text);
+}
+.conteudo-body{
+    background-color: blue;
+}
+
+/* SIDEBAR */
+aside.sidebar{
+    background-color: var(--side-card-color);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand-logo {
+    margin-bottom: 50px;
+}
+
+aside.sidebar a.logo {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+aside.sidebar a.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+aside.sidebar nav.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside.sidebar nav.menu ul li {
+    margin-bottom: 10px;
+    min-height: 3.5rem;
+    padding: 0.3125rem 0.5rem;
+}
+aside.sidebar nav.menu ul li.active i {
+    color: var(--Color-text-ETH);
+    opacity: 1;
+}
+aside.sidebar nav.menu ul li a i {
+    font-size: 20px;
+    color: #7e7e7e;
+    opacity: 0.75;
+}
+aside.sidebar nav.menu ul li.logout {
+    position: fixed;
+    bottom: 50px;
+}
+aside.sidebar nav.menu ul li a i:hover {
+    color: var(--Color-text-ETH);
+}
+
+ 
